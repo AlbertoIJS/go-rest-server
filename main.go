@@ -37,7 +37,7 @@ func main() {
 			log.Println(err)
 			return
 		}
-		f, err := os.OpenFile(handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
+		f, err := os.OpenFile("./uploads/"+handler.Filename, os.O_WRONLY|os.O_CREATE, 0666)
 		if err != nil {
 			log.Println(err)
 			return
