@@ -72,7 +72,6 @@ func main() {
 	http.HandleFunc("GET /file", getHandler)
 	http.HandleFunc("DELETE /file", deleteHandler)
 	http.HandleFunc("POST /upload", uploadHandler)
-	// TODO
-	http.HandleFunc("PUT /upload", handler)
+
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
